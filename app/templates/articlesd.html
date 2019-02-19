@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+<!-- Content block -->
+
+{% block content %}
+{% for news in articles%}
+<div class="container">
+
+    <!-- Poster background -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{articles.title}}) no-repeat center center">
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+           <ul>
+              <h3>News Details</h3>
+               <li><strong><u>Title:</u></strong><br>{{news.title}}</li>
+               <li><strong><u>Content:</u></strong><br>{{news.content}}</li>
+               <img src="{{news.urlToImage}}" alt="" height="200">
+               <li><strong><u>Author:</u></strong><br>{{news.author}}</li>
+               <li><strong><u>Time:</u></strong><br>{{news.publishedAt}}</li>
+               
+               <br>
+            </ul>
+            
+        
+        </div>
+    </div>
+
+</div>
+{% endfor %}
+{% endblock %}
