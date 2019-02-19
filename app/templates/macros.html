@@ -1,0 +1,25 @@
+{% macro displayNewsList(news_list) %}
+
+    {% for news_sources in news_list %}
+        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <p>{{ news_sources.name }}</p>
+            </div>
+            <p>{{ news_sources.description }}</p>
+            <style>
+                p.uppercase {
+                text-transform: uppercase;
+                color:lightgreen;
+                }
+            </style>
+            <center><strong><p class="uppercase">{{news_sources.country}}</p></strong></center>
+            <p class="text-center">
+                <a href="/news/">
+                    {{ news_sources.id|truncate(10)}}</a>
+            </p></div>
+        </div>
+
+    {% endfor %}
+
+{% endmacro %}
