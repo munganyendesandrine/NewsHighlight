@@ -7,8 +7,7 @@
 
     <!-- Poster background -->
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{articles.title}}) no-repeat center center">
-        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{articles.title}}) no-repeat center center"></div>
 
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
            <ul>
@@ -18,14 +17,11 @@
                <img src="{{news.urlToImage}}" alt="" height="200">
                <li><strong><u>Author:</u></strong><br>{{news.author}}</li>
                <li><strong><u>Time:</u></strong><br>{{news.publishedAt}}</li>
-               
+               <a href="{{news.url}}">Click here to Read the Full Article</a>
                <br>
             </ul>
-            
-        
         </div>
     </div>
-
 </div>
 {% endfor %}
 {% endblock %}
