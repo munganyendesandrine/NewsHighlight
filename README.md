@@ -18,6 +18,9 @@ Finally once the Article Link is clicked, the user gets the full page of news de
 
 * Python 3.6
 * Linux/Ubuntu
+* HTML
+* CSS
+* Bootstrap
 
 
 ## Project Setup Instruction
