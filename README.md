@@ -42,7 +42,7 @@ For more information you may need, contact me at mungasandwingsd@gmail.com
 
 ## Copyright and License Information
 
-Copyright©2019 PasswordLocker Application
+Copyright©2019 NewsHighlight Application
 
 This project is licensed under the MIT License - see the License.md file for details.
 
