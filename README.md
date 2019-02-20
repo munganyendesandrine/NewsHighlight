@@ -14,3 +14,9 @@ This project once launched, displays the news headlines as well as their sources
 Finally once the Article Link is clicked, the user gets the full page of news details displayed. 
 
 
+## Technologies used
+
+* Python 3.6
+* Linux/Ubuntu
+
+
