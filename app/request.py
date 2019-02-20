@@ -32,8 +32,6 @@ def get_news(category):
             news_results = process_results(news_results_list)
            
             
-
-
     return news_results
 
 def process_results(news_list):
