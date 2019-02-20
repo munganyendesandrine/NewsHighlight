@@ -1,4 +1,6 @@
 
+{% import 'macros.html' as macro%}
+{% extends 'base.html'%}
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,8 +10,7 @@
         {% else %}
         <title> Welcome to the best news Review website </title>
         {% endif %}
-        {% import 'macros.html' as macro%}
-        {% extends 'base.html'%}
+        
     </head>
     <body>
         <!-- Styles block -->
@@ -35,13 +36,13 @@
             {{ macro.displayNewsList(technology)}}
         
         <!-- Business news -->
-        <h3>Business News</h3>
+         <h3>Business News</h3>
        
             {{ macro.displayNewsList(business)}}
         
         <!-- Sports news -->
         <h3>Sports News</h3>
-        <ul>
+        
             {{ macro.displayNewsList(sports)}}
         
         <!-- Entertainment news -->

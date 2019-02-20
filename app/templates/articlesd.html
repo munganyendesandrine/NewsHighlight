@@ -1,15 +1,22 @@
 {% extends 'base.html'%}
+ <!-- Styles block -->
+
+ {% block styles%}
+ {{ super() }}
+ <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
 <!-- Content block -->
 
 {% block content %}
-{% for news in articles%}
-<div class="container">
+
+<div class="container-fluid">
 
     <!-- Poster background -->
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{articles.title}}) no-repeat center center"></div>
-
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+    {% for news in articles%}
+      
+        <div class="col-md-3 movie-details">
+                {{articles.title}}
            <ul>
               <h3>News Details</h3>
                <li><strong><u>Title:</u></strong><br>{{news.title}}</li>
@@ -20,8 +27,9 @@
                <a href="{{news.url}}">Click here to Read the Full Article</a>
                <br>
             </ul>
-        </div>
+       </div> 
+       {% endfor %}
     </div>
 </div>
-{% endfor %}
+
 {% endblock %}
