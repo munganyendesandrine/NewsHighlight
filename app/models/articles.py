@@ -12,3 +12,4 @@ class Articlesd:
         self.urlToImage=urlToImage
         self.publishedAt=publishedAt
         self.content=content
+      

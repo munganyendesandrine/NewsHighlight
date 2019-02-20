@@ -15,11 +15,12 @@
                 color:lightgreen;
                 }
             </style>
-            <center><strong><p class="uppercase">{{news_sources.country}}</p></strong></center>
+            <center><p class="uppercase">{{ news_sources.country }}</p></center>
             <p class="text-center">
                 <a href="/articles/{{news_sources.id}}">
                     {{ news_sources.id|truncate(10)}}</a>
-            </p></div>
+            </p>
+        </div>
         </div>
 
     {% endfor %}
